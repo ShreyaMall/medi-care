@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare - Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="./src/gallery.css">
+  <link rel="stylesheet" href="./src/header.css">
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <i class="bi bi-heart-pulse"></i>
+        <h1 class="sitename">MediCare</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="department-details.html">Department Details</a></li>
+              <li><a href="service-details.html">Service Details</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="appointment.html">Appointment</a>
+
+    </div>
+  </header>
+   <main class="main">
+    <!-- Page Title -->
+    <div class="page-title light-background" data-aos="fade-up" data-aos-delay="100">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active current">gallery</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title-wrapper">
+        <h1>Gallery</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+    </div><!-- End Page Title -->
+     <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="isotope-layout">
+ 
+          <!-- Filter Bar -->
+          <div class="filter-bar">
+            <span class="filter-label">Browse</span>
+            <ul class="shadcn-filters isotope-filters">
+              <li data-filter="*" class="filter-active">
+                <span>All</span>
+                <span class="filter-count">08</span>
+              </li>
+              <li data-filter=".filter-nature">
+                <span>Nature</span>
+                <span class="filter-count">03</span>
+              </li>
+              <li data-filter=".filter-architecture">
+                <span>Architecture</span>
+                <span class="filter-count">03</span>
+              </li>
+              <li data-filter=".filter-people">
+                <span>People</span>
+                <span class="filter-count">02</span>
+              </li>
+            </ul>
+          </div>
+          <div class="row g-3 isotope-container">
+ 
+            <!-- Item 1 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-nature" data-aos="fade-up" data-aos-delay="100" >
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-1.webp" class="img-fluid" loading="lazy" alt="Untouched Wilderness">
+                  <span class="card-badge">Nature</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Untouched Wilderness</h3>
+                    <p class="card-desc">Quietly composed scenes from remote forests and untamed valleys.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-1.webp" class="glightbox btn-ghost" title="Untouched Wilderness">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 2 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-architecture" data-aos="fade-up" data-aos-delay="100" >
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-2.webp" class="img-fluid" loading="lazy" alt="Geometric Cityscape">
+                  <span class="card-badge">Architecture</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Geometric Cityscape</h3>
+                    <p class="card-desc">Studies of light, shadow and the rhythm of contemporary structures.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-2.webp" class="glightbox btn-ghost" title="Geometric Cityscape">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 3 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-people" data-aos="fade-up" data-aos-delay="100">
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-3.webp" class="img-fluid" loading="lazy" alt="Honest Expressions">
+                  <span class="card-badge">People</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Honest Expressions</h3>
+                    <p class="card-desc">Unstaged frames capturing brief and authentic human emotion.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-3.webp" class="glightbox btn-ghost" title="Honest Expressions">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 4 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-nature"data-aos="fade-up" data-aos-delay="100">
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-4.webp" class="img-fluid" loading="lazy" alt="Mountain Quietude">
+                  <span class="card-badge">Nature</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Mountain Quietude</h3>
+                    <p class="card-desc">High-altitude vistas where weather and stone shape every composition.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-4.webp" class="glightbox btn-ghost" title="Mountain Quietude">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 5 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-architecture" data-aos="fade-up" data-aos-delay="100" >
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-5.webp" class="img-fluid" loading="lazy" alt="Concrete Minimalism">
+                  <span class="card-badge">Architecture</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Concrete Minimalism</h3>
+                    <p class="card-desc">Refined facades and considered spaces from new urban construction.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-5.webp" class="glightbox btn-ghost" title="Concrete Minimalism">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 6 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-people" data-aos="fade-up" data-aos-delay="100">
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-6.webp" class="img-fluid" loading="lazy" alt="Studio Character Work">
+                  <span class="card-badge">People</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Studio Character Work</h3>
+                    <p class="card-desc">Controlled-light portraits exploring identity, posture and tone.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-6.webp" class="glightbox btn-ghost" title="Studio Character Work">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 7 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-nature" data-aos="fade-up" data-aos-delay="100" >
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-7.webp" class="img-fluid" loading="lazy" alt="Reflective Shores">
+                  <span class="card-badge">Nature</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Reflective Shores</h3>
+                    <p class="card-desc">Calm coastal moments where water and sky share a single horizon.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-7.webp" class="glightbox btn-ghost" title="Reflective Shores">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+            <!-- Item 8 -->
+            <article class="col-lg-4 col-md-6 gallery-item isotope-item filter-architecture" data-aos="fade-up" data-aos-delay="100" >
+              <div class="shadcn-card">
+                <div class="card-media">
+                  <img src="./public/gallery-8.webp" class="img-fluid" loading="lazy" alt="Heritage Stonework">
+                  <span class="card-badge">Architecture</span>
+                </div>
+                <div class="card-body">
+                  <header class="card-head">
+                    <h3 class="card-title">Heritage Stonework</h3>
+                    <p class="card-desc">Documentation of preserved buildings and the craft of older eras.</p>
+                  </header>
+                  <footer class="card-foot">
+                    <a href="./public/gallery-8.webp" class="glightbox btn-ghost" title="Heritage Stonework">
+                      <i class="bi bi-arrows-fullscreen"></i> Preview
+                    </a>
+                    <a href="gallery-details.html" class="btn-link">Details <i class="bi bi-arrow-up-right"></i></a>
+                  </footer>
+                </div>
+              </div>
+            </article>
+ 
+          </div><!-- End isotope-container -->
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="./index.html" class="logo d-flex align-items-center">
+              <span class="sitename">MediCare</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nobis illum</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+  // Gallery Filter
+
+  const filterButtons = document.querySelectorAll(".isotope-filters li");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+      // Active class remove
+      filterButtons.forEach(btn => {
+        btn.classList.remove("filter-active");
+      });
+
+      // Active class add
+      this.classList.add("filter-active");
+
+      // Filter value
+      const filterValue = this.getAttribute("data-filter");
+
+      galleryItems.forEach(item => {
+
+        if (filterValue === "*") {
+
+          item.style.display = "";
+
+        } 
+        
+        else if (item.classList.contains(filterValue.substring(1))) {
+
+          item.style.display = "";
+
+        } 
+        
+        else {
+
+          item.style.display = "none";
+
+        }
+
+      });
+
+    });
+
+  });
+
+</script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+</body>
+</html>

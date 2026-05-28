@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare - Appointment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ 
+  <link rel="stylesheet" href="./src/testimonials.css">
+  <link rel="stylesheet" href="./src/header.css">
+
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <i class="bi bi-heart-pulse"></i>
+        <h1 class="sitename">MediCare</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="department-details.html">Department Details</a></li>
+              <li><a href="service-details.html">Service Details</a></li>
+              <li><a href="appointment.html">Appointment</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="faq.html">Frequently Asked Questions</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="appointment.html">Appointment</a>
+
+    </div>
+  </header>
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active current">Testimonials</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="title-wrapper">
+        <h1>Testimonials</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+    </div><!-- End Page Title -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container " data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-3">
+
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+            <article class="review-card">
+              <div class="review-card-header">
+                <span class="review-badge">Verified</span>
+                <div class="review-rating" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="review-card-content">
+                <p class="review-text">Excellent platform that streamlined our entire workflow. The interface feels intuitive and the support team responds within minutes whenever we need help.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="./public/person-m-9.webp" class="review-avatar" alt="" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Marcus Reed</h3>
+                  <span class="review-role">Chief Executive</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End Review Card -->
+
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="150">
+            <article class="review-card">
+              <div class="review-card-header">
+                <span class="review-badge">Verified</span>
+                <div class="review-rating" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="review-card-content">
+                <p class="review-text">Adopting this toolkit cut our delivery cycles in half. Documentation is thorough, components are reliable, and the developer experience is genuinely refreshing.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="./public/person-f-5.webp" class="review-avatar" alt="" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Helena Park</h3>
+                  <span class="review-role">Product Designer</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End Review Card -->
+
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="200">
+            <article class="review-card">
+              <div class="review-card-header">
+                <span class="review-badge">Verified</span>
+                <div class="review-rating" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="review-card-content">
+                <p class="review-text">Onboarding took less than an afternoon. Our small team replaced three separate tools and the savings have been measurable from week one onward.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="./public/person-f-12.webp" class="review-avatar" alt="" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Naomi Clarke</h3>
+                  <span class="review-role">Shop Manager</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End Review Card -->
+
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+            <article class="review-card">
+              <div class="review-card-header">
+                <span class="review-badge">Verified</span>
+                <div class="review-rating" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="review-card-content">
+                <p class="review-text">A polished, dependable solution. We tested four alternatives and this one consistently outperformed every benchmark we threw at it without breaking the budget.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="./public/person-m-12.webp" class="review-avatar" alt="" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Daniel Whitley</h3>
+                  <span class="review-role">Independent Developer</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End Review Card -->
+
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="150">
+            <article class="review-card">
+              <div class="review-card-header">
+                <span class="review-badge">Verified</span>
+                <div class="review-rating" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="review-card-content">
+                <p class="review-text">The accessibility primitives alone justified the switch. Our compliance audit improved noticeably and our engineers ship features faster than they used to.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="./public/person-m-13.webp" class="review-avatar" alt="" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Theo Lambert</h3>
+                  <span class="review-role">Startup Founder</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End Review Card -->
+
+          <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="200">
+            <article class="review-card">
+              <div class="review-card-header">
+                <span class="review-badge">Verified</span>
+                <div class="review-rating" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="review-card-content">
+                <p class="review-text">Customer feedback has been overwhelmingly positive since launch. The components feel familiar to users and the build quality is consistently dependable throughout.</p>
+              </div>
+              <div class="review-card-footer">
+                <img src="./public/person-f-13.webp" class="review-avatar" alt="" loading="lazy">
+                <div class="review-author">
+                  <h3 class="review-name">Priya Donovan</h3>
+                  <span class="review-role">Boutique Owner</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End Review Card -->
+
+        </div>
+
+      </div>
+    </section>
+    </main>
+    <!-- Footer -->
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="./index.html" class="logo d-flex align-items-center">
+              <span class="sitename">MediCare</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nobis illum</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
+</body>
+</html>
