@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/departments", "destination": "/departments.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/doctors", "destination": "/doctors.html" },
+    { "source": "/appointment", "destination": "/appointment.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/testimonials", "destination": "/testimonials.html" },
+    { "source": "/department-details", "destination": "/department-details.html" },
+    { "source": "/service-details", "destination": "/service-details.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
